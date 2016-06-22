@@ -9,19 +9,23 @@
 /* Begin PBXBuildFile section */
 		CB8164921D1AC5FF00205181 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8164911D1AC5FF00205181 /* AppDelegate.swift */; };
 		CB8164941D1AC5FF00205181 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8164931D1AC5FF00205181 /* ViewController.swift */; };
-		CB8164971D1AC5FF00205181 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB8164951D1AC5FF00205181 /* Main.storyboard */; };
 		CB8164991D1AC5FF00205181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB8164981D1AC5FF00205181 /* Assets.xcassets */; };
 		CB81649C1D1AC5FF00205181 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB81649A1D1AC5FF00205181 /* LaunchScreen.storyboard */; };
+		CB8164A51D1AC7B900205181 /* XPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8164A41D1AC7B900205181 /* XPageViewController.swift */; };
+		CB8164A71D1ACBEE00205181 /* ValueExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8164A61D1ACBEE00205181 /* ValueExtensions.swift */; };
+		CB8164A91D1ACD4600205181 /* XPageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8164A81D1ACD4600205181 /* XPageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CB81648E1D1AC5FF00205181 /* XPageViewControllerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XPageViewControllerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8164911D1AC5FF00205181 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB8164931D1AC5FF00205181 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CB8164961D1AC5FF00205181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB8164981D1AC5FF00205181 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB81649B1D1AC5FF00205181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB81649D1D1AC5FF00205181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB8164A41D1AC7B900205181 /* XPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPageViewController.swift; sourceTree = "<group>"; };
+		CB8164A61D1ACBEE00205181 /* ValueExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueExtensions.swift; sourceTree = "<group>"; };
+		CB8164A81D1ACD4600205181 /* XPageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		CB8164901D1AC5FF00205181 /* XPageViewControllerTest */ = {
 			isa = PBXGroup;
 			children = (
+				CB8164A31D1AC79200205181 /* Xpage */,
 				CB8164911D1AC5FF00205181 /* AppDelegate.swift */,
 				CB8164931D1AC5FF00205181 /* ViewController.swift */,
-				CB8164951D1AC5FF00205181 /* Main.storyboard */,
 				CB8164981D1AC5FF00205181 /* Assets.xcassets */,
 				CB81649A1D1AC5FF00205181 /* LaunchScreen.storyboard */,
 				CB81649D1D1AC5FF00205181 /* Info.plist */,
 			);
 			path = XPageViewControllerTest;
+			sourceTree = "<group>";
+		};
+		CB8164A31D1AC79200205181 /* Xpage */ = {
+			isa = PBXGroup;
+			children = (
+				CB8164A61D1ACBEE00205181 /* ValueExtensions.swift */,
+				CB8164A41D1AC7B900205181 /* XPageViewController.swift */,
+				CB8164A81D1ACD4600205181 /* XPageExtension.swift */,
+			);
+			name = Xpage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +139,6 @@
 			files = (
 				CB81649C1D1AC5FF00205181 /* LaunchScreen.storyboard in Resources */,
 				CB8164991D1AC5FF00205181 /* Assets.xcassets in Resources */,
-				CB8164971D1AC5FF00205181 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB8164A91D1ACD4600205181 /* XPageExtension.swift in Sources */,
 				CB8164941D1AC5FF00205181 /* ViewController.swift in Sources */,
+				CB8164A71D1ACBEE00205181 /* ValueExtensions.swift in Sources */,
+				CB8164A51D1AC7B900205181 /* XPageViewController.swift in Sources */,
 				CB8164921D1AC5FF00205181 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,14 +160,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CB8164951D1AC5FF00205181 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CB8164961D1AC5FF00205181 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CB81649A1D1AC5FF00205181 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
