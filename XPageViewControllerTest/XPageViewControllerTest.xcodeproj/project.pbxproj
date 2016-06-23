@@ -16,6 +16,7 @@
 		CB8164A91D1ACD4600205181 /* XPageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8164A81D1ACD4600205181 /* XPageExtension.swift */; };
 		CB8164AB1D1AD17D00205181 /* XPageBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8164AA1D1AD17D00205181 /* XPageBar.swift */; };
 		CB8164AD1D1AD47700205181 /* XPageBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8164AC1D1AD47700205181 /* XPageBarExtension.swift */; };
+		CB8164B01D1BCF0400205181 /* SingletonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8164AF1D1BCF0400205181 /* SingletonClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CB8164A81D1ACD4600205181 /* XPageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPageExtension.swift; sourceTree = "<group>"; };
 		CB8164AA1D1AD17D00205181 /* XPageBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPageBar.swift; sourceTree = "<group>"; };
 		CB8164AC1D1AD47700205181 /* XPageBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPageBarExtension.swift; sourceTree = "<group>"; };
+		CB8164AF1D1BCF0400205181 /* SingletonClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		CB8164901D1AC5FF00205181 /* XPageViewControllerTest */ = {
 			isa = PBXGroup;
 			children = (
+				CB8164AE1D1BCEA900205181 /* Singleton */,
 				CB8164A31D1AC79200205181 /* Xpage */,
 				CB8164911D1AC5FF00205181 /* AppDelegate.swift */,
 				CB8164931D1AC5FF00205181 /* ViewController.swift */,
@@ -82,6 +85,14 @@
 				CB8164AC1D1AD47700205181 /* XPageBarExtension.swift */,
 			);
 			name = Xpage;
+			sourceTree = "<group>";
+		};
+		CB8164AE1D1BCEA900205181 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				CB8164AF1D1BCF0400205181 /* SingletonClass.swift */,
+			);
+			name = Singleton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB8164B01D1BCF0400205181 /* SingletonClass.swift in Sources */,
 				CB8164A91D1ACD4600205181 /* XPageExtension.swift in Sources */,
 				CB8164AB1D1AD17D00205181 /* XPageBar.swift in Sources */,
 				CB8164AD1D1AD47700205181 /* XPageBarExtension.swift in Sources */,
