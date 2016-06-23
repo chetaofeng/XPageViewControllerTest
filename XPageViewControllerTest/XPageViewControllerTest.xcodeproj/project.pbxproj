@@ -14,6 +14,8 @@
 		CB8164A51D1AC7B900205181 /* XPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8164A41D1AC7B900205181 /* XPageViewController.swift */; };
 		CB8164A71D1ACBEE00205181 /* ValueExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8164A61D1ACBEE00205181 /* ValueExtensions.swift */; };
 		CB8164A91D1ACD4600205181 /* XPageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8164A81D1ACD4600205181 /* XPageExtension.swift */; };
+		CB8164AB1D1AD17D00205181 /* XPageBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8164AA1D1AD17D00205181 /* XPageBar.swift */; };
+		CB8164AD1D1AD47700205181 /* XPageBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8164AC1D1AD47700205181 /* XPageBarExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		CB8164A41D1AC7B900205181 /* XPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPageViewController.swift; sourceTree = "<group>"; };
 		CB8164A61D1ACBEE00205181 /* ValueExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueExtensions.swift; sourceTree = "<group>"; };
 		CB8164A81D1ACD4600205181 /* XPageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPageExtension.swift; sourceTree = "<group>"; };
+		CB8164AA1D1AD17D00205181 /* XPageBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPageBar.swift; sourceTree = "<group>"; };
+		CB8164AC1D1AD47700205181 /* XPageBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPageBarExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 				CB8164A61D1ACBEE00205181 /* ValueExtensions.swift */,
 				CB8164A41D1AC7B900205181 /* XPageViewController.swift */,
 				CB8164A81D1ACD4600205181 /* XPageExtension.swift */,
+				CB8164AA1D1AD17D00205181 /* XPageBar.swift */,
+				CB8164AC1D1AD47700205181 /* XPageBarExtension.swift */,
 			);
 			name = Xpage;
 			sourceTree = "<group>";
@@ -150,6 +156,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB8164A91D1ACD4600205181 /* XPageExtension.swift in Sources */,
+				CB8164AB1D1AD17D00205181 /* XPageBar.swift in Sources */,
+				CB8164AD1D1AD47700205181 /* XPageBarExtension.swift in Sources */,
 				CB8164941D1AC5FF00205181 /* ViewController.swift in Sources */,
 				CB8164A71D1ACBEE00205181 /* ValueExtensions.swift in Sources */,
 				CB8164A51D1AC7B900205181 /* XPageViewController.swift in Sources */,

@@ -24,10 +24,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let vc4 = ViewController()
         let vc5 = ViewController()
         
+        vc1.title = "ViewController title1"
+        vc2.title = "ViewController title2"
+        vc3.title = "ViewController title3"
+        vc4.title = "ViewController title4"
+        vc5.title = "ViewController title5"
+        
         let xPageViewController = XPageViewController()
         xPageViewController.controllers = [vc1,vc2,vc3,vc4,vc5]
         
-        self.window?.rootViewController = xPageViewController
+        self.window?.rootViewController = UINavigationController(rootViewController: xPageViewController)
         self.window?.makeKeyAndVisible()
         
         return true

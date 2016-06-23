@@ -20,3 +20,9 @@ extension Int {
     }
 }
 
+extension CGFloat {
+    var IntValue:Int{
+        return Int(self)
+    }
+}
+
