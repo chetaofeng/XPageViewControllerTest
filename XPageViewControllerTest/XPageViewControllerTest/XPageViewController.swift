@@ -15,16 +15,15 @@ protocol XPageViewControllerDataSource {
 }
 
 class XPageViewController: UIViewController {
-    
     let xPageBar = XPageBar()
     let screenWidth = UIScreen.mainScreen().bounds.size.width
     let screenHeight = UIScreen.mainScreen().bounds.size.height
-    
-    var xScrollView:UIScrollView!
-    var controllers:Array<UIViewController> = []{
+    var contentScrollView:UIScrollView!
+    var numberOfControllers:Int!
+    var hasInitControllerTag:Dictionary<Int,Bool> = [:]
+    var xPageDataSource:XPageViewControllerDataSource! {
         didSet{
-            print("Controllers didSet")
-            
+            self.numberOfControllers = self.xPageDataSource.XPageNumberOfControllers()
             self.addViewToSelf()
         }
     }
@@ -32,12 +31,12 @@ class XPageViewController: UIViewController {
     init(){
         super.init(nibName: nil, bundle: nil)
         
-        self.xScrollView = UIScrollView(frame: self.view.frame)
-        self.xScrollView.showsHorizontalScrollIndicator = false
-        self.xScrollView.showsVerticalScrollIndicator = false
-        self.xScrollView.pagingEnabled = true
-        self.xScrollView.delegate = self
-        self.view.addSubview(self.xScrollView)
+        self.contentScrollView = UIScrollView(frame: self.view.frame)
+        self.contentScrollView.showsHorizontalScrollIndicator = false
+        self.contentScrollView.showsVerticalScrollIndicator = false
+        self.contentScrollView.pagingEnabled = true
+        self.contentScrollView.delegate = self
+        self.view.addSubview(self.contentScrollView)
         
         self.xPageBar.frame = CGRectMake(0,64,self.screenWidth,44) //64为NavigationBar的高度
         self.xPageBar.xPageBarDelegate = self
