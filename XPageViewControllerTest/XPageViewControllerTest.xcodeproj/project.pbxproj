@@ -17,6 +17,9 @@
 		CB8164AB1D1AD17D00205181 /* XPageBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8164AA1D1AD17D00205181 /* XPageBar.swift */; };
 		CB8164AD1D1AD47700205181 /* XPageBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8164AC1D1AD47700205181 /* XPageBarExtension.swift */; };
 		CB8164B01D1BCF0400205181 /* SingletonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8164AF1D1BCF0400205181 /* SingletonClass.swift */; };
+		CB8164B31D1CC88B00205181 /* BtnExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8164B21D1CC88B00205181 /* BtnExtension.swift */; };
+		CB8164B51D1CCED200205181 /* Runtime.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB8164B41D1CCED200205181 /* Runtime.storyboard */; };
+		CB8164B71D1CCF3700205181 /* RuntimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8164B61D1CCF3700205181 /* RuntimeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		CB8164AA1D1AD17D00205181 /* XPageBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPageBar.swift; sourceTree = "<group>"; };
 		CB8164AC1D1AD47700205181 /* XPageBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPageBarExtension.swift; sourceTree = "<group>"; };
 		CB8164AF1D1BCF0400205181 /* SingletonClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonClass.swift; sourceTree = "<group>"; };
+		CB8164B21D1CC88B00205181 /* BtnExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtnExtension.swift; sourceTree = "<group>"; };
+		CB8164B41D1CCED200205181 /* Runtime.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Runtime.storyboard; sourceTree = "<group>"; };
+		CB8164B61D1CCF3700205181 /* RuntimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuntimeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,7 @@
 		CB8164901D1AC5FF00205181 /* XPageViewControllerTest */ = {
 			isa = PBXGroup;
 			children = (
+				CB8164B11D1CC85300205181 /* Runtime */,
 				CB8164AE1D1BCEA900205181 /* Singleton */,
 				CB8164A31D1AC79200205181 /* Xpage */,
 				CB8164911D1AC5FF00205181 /* AppDelegate.swift */,
@@ -93,6 +100,16 @@
 				CB8164AF1D1BCF0400205181 /* SingletonClass.swift */,
 			);
 			name = Singleton;
+			sourceTree = "<group>";
+		};
+		CB8164B11D1CC85300205181 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				CB8164B21D1CC88B00205181 /* BtnExtension.swift */,
+				CB8164B41D1CCED200205181 /* Runtime.storyboard */,
+				CB8164B61D1CCF3700205181 /* RuntimeViewController.swift */,
+			);
+			name = Runtime;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB8164B51D1CCED200205181 /* Runtime.storyboard in Resources */,
 				CB81649C1D1AC5FF00205181 /* LaunchScreen.storyboard in Resources */,
 				CB8164991D1AC5FF00205181 /* Assets.xcassets in Resources */,
 			);
@@ -171,9 +189,11 @@
 				CB8164AB1D1AD17D00205181 /* XPageBar.swift in Sources */,
 				CB8164AD1D1AD47700205181 /* XPageBarExtension.swift in Sources */,
 				CB8164941D1AC5FF00205181 /* ViewController.swift in Sources */,
+				CB8164B31D1CC88B00205181 /* BtnExtension.swift in Sources */,
 				CB8164A71D1ACBEE00205181 /* ValueExtensions.swift in Sources */,
 				CB8164A51D1AC7B900205181 /* XPageViewController.swift in Sources */,
 				CB8164921D1AC5FF00205181 /* AppDelegate.swift in Sources */,
+				CB8164B71D1CCF3700205181 /* RuntimeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
